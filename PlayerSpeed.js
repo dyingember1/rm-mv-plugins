@@ -1,9 +1,20 @@
 //custom speed
-
+/*:
+*   @plugindesc Globally raise the player movement speed
+*   @param SpeedBonus
+*   @default 1.0
+*   @help
+*   ============================================================
+*   This plugin raises the player's movement speed permanently
+*   by overiding the 'realMoveSpeed'
+*   speed = speed + speedBonus
+*   ============================================================
+*/
 
 
 
 (function(){
+    'use strict'; 
     var _pluginDesc = "modify the player's movement speed";
     var parameters = PluginManger.parameters('SpeedBoost');
     var speedBonus = Number(parameters['SpeedBonus'] || 1.0);
