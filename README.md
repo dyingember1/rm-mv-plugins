@@ -5,7 +5,9 @@ I like RPG Maker games. I wanted to create my own games and needed some plugins.
 1. All files inside rm-mv-plugins are free to use both commercially and non-commercially.
 2. Free as in: without any cost and with the freedom to use, copy, modify, merge, publish, and distribute.
 3. Always back up your project; if something breaks, don't blame a stranger on the internet.
+
 Read the full license on the License tab.
+
 Note: You don't need to credit me, but it might help others if you direct them to this repo.
 
 ### How to use
