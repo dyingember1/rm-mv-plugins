@@ -1,3 +1,5 @@
+//not done yet
+
 /*:
  * @plugindesc Increase default player move speed globally.
  * @help
