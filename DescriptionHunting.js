@@ -1,7 +1,7 @@
 //=============================================================================
-// Dynamic Parameter Extraction (File-Name Agnostic)
+// Dynamic Parameter Extraction
 //=============================================================================
-// PurposeRPG Maker Plugings look for their settings using the exact file name
+// Purpose : RPG Maker Plugins look for their settings using the exact file name
 // like - "MyPlugin". Use it too look for them using description instead.
 //=============================================================================
 // Use : put it inside your plugin for which you want to use it. And copy paste
