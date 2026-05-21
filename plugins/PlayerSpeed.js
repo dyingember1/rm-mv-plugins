@@ -1,9 +1,11 @@
+// ver 1.4
+
 /*:
  * @plugindesc Globally raise the player movement speed
  * @param SpeedBonus
  * @desc The flat speed value added to the player's normal movement speed.
  * @default 1.0
- * ver 1.3 (final)
+ * 
  * 
  * @help
  * ============================================================================
@@ -12,8 +14,6 @@
  * This plugin increases the player's movement speed by overriding
  * the realMoveSpeed.
  *
- * This change is passive and permanent while the plugin is active.
- * 
  * To adjust the speed modifier, change the 'SpeedBonus' parameter in the
  * Plugin Manager.
  */
