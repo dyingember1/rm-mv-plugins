@@ -40,20 +40,13 @@
     
     // Overwriting the command list 
     Window_TitleCommand.prototype.makeCommandList = function(){
-        this.addCommand(txtNewGame, 'NewGame');
-        this.addCommand(txtContinue, 'Continue', this.isContinueEnabled());
-        this.addCommand(txtOptions, 'Options');
+        this.addCommand(txtNewGame, 'newGame');
+        this.addCommand(txtContinue, 'continue', this.isContinueEnabled());
+        this.addCommand(txtOptions, 'options');
         this.addCommand(txtQuit, 'quit');
 
     };
 
-    // title command window generation to map to the quit
-    var _Alias_Scene_Title_createCommandWindow = Scene_Title.prototype.createCommandWindow;
-    Scene_Title.prototype.createCommandWindow = function(){
-        _Alias_Scene_Title_createCommandWindow.call(this);
-        this._commandWindow.setHandler('quit', this.commandQuit.bind(this));
-    };
-    
     // Safely clip command memory to avoid out-of-bounds index selection errors
     var _Alias_Window_TitleCommand_selectLastCommand = Window_TitleCommand.prototype.selectLastCommand;
     Window_TitleCommand.prototype.selectLastCommand = function() {
@@ -63,6 +56,12 @@
         }
     };
 
+    // title command window generation to map to the quit
+    var _Alias_Scene_Title_createCommandWindow = Scene_Title.prototype.createCommandWindow;
+    Scene_Title.prototype.createCommandWindow = function(){
+        _Alias_Scene_Title_createCommandWindow.call(this);
+        this._commandWindow.setHandler('quit', this.commandQuit.bind(this));
+    };
 
     // execute the shutdown protocol
     Scene_Title.prototype.commandQuit = function(){
