@@ -1,12 +1,14 @@
-// ver 1.4
+// ver 2.0 final
 
 /*:
  * @plugindesc Globally raise the player movement speed
  * @param SpeedBonus
+ * @type number
+ * @min 0
+ * @max 5
  * @desc The flat speed value added to the player's normal movement speed.
  * @default 1.0
- * 
- * 
+ *
  * @help
  * ============================================================================
  * Help Information
@@ -18,21 +20,18 @@
  * Plugin Manager.
  */
 
-
-
 (function(){
-    'use strict'; 
-    var _pluginDesc = "modify the player's movement speed";
-    var parameters = PluginManager.parameters('SpeedBoost');
-    var speedBonus = Number(parameters['SpeedBonus'] || 1.0);
+  'use strict';
+  var parameters = PluginManager.parameters('PlayerSpeed');
+  var speedBonus = Number(parameters['SpeedBonus'] || 1.0);
 
-    var PlayerBaseSpeed = Game_CharacterBase.prototype.realMoveSpeed;
-    
-    Game_CharacterBase.prototype.realMoveSpeed = function(){
+  var PlayerBaseSpeed = Game_CharacterBase.prototype.realMoveSpeed;
+
+  Game_CharacterBase.prototype.realMoveSpeed = function(){
     var speed = PlayerBaseSpeed.call(this);
     if (this === $gamePlayer){
-        return speed + speedBonus;
+      return speed + speedBonus;
     }
     return speed;
-    };
+  };
 })();
