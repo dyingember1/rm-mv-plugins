@@ -25,7 +25,7 @@
  * @help
  * ----------------------------------------------------
  * Overwrite the default text in the title screen menu
- * 
+ * to customise the title creen menu
  * No plugin commands
  * ----------------------------------------------------
 */ 
