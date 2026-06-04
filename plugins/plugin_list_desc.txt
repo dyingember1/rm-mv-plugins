@@ -1,0 +1,17 @@
+May add more later...
+
+
+1. PlayerSpeed : Set a default global speed for the player.
+why? : I don't like default speed of RMMV, toooo slow
+
+2. CustomTitleScreenMenu : Customise you title menu options and add a quit button
+why? : I like to customise menu option.
+
+New Game? : Nope!
+Start New Journey? : Yess! 
+
+3. SlotManager : Manage save slots in game
+why? : 
+i. Custom slot number : Sometimes there are too many or too few slots
+ii. Overwrite all slots : something like for locking players in a single route after a point, or to ragebait them lol
+iii. delete all saves : for permadeath like mechanics, or to ragebait the players even harder XD... (please don't do that)
