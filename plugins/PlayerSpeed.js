@@ -1,5 +1,4 @@
 // ver 2.0 final
-
 /*:
  * @plugindesc Globally raise the player movement speed
  * @param SpeedBonus

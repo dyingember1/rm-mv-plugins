@@ -1,0 +1,6 @@
+May add more later...
+
+
+1. PlayerSpeed : Set a default global speed for the player.
+2. CustomTitleScreenMenu : Customise you title menu options and add a quit button
+3. SlotManager : Manage save slots in game
