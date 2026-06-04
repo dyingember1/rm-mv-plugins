@@ -1,4 +1,4 @@
-// ver - 1.0 final
+// ver - 0.5 (will update more later)
 /*:
  * @plugindesc Customise title screen menu
  *
